@@ -5,7 +5,7 @@ import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <div className="h-lvh w-screen flex flex-col">
+    <div className="h-lvh w-screen flex flex-col relative">
       <Navbar />
       <Body />
       <HorizontalCard />
