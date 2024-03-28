@@ -1,22 +1,22 @@
-import React,{useState} from 'react'
-import * as StreamerImages from '../source/image/streamerImage';
+import React, { useState } from "react";
+import * as StreamerImages from "../source/image/streamerImage";
 
 const Body = () => {
   return (
-    <div className="flex-1 overflow-y-auto overflow-x-hidden">
-      <div className="h-screen w-screen flex flex-col items-center justify-start">
-        <div className="aspect-w-9 aspect-h-16">
+    <div className="h-screen overflow-hidden ">
+      <div className="h-full w-screen flex flex-col items-center justify-start overflow-y-auto ">
+        <div className="h-full flex items-center justify-center py-10 ">
           <img
             src={StreamerImages.Streamer1}
             alt="Streamer Circle 10"
-            className="object-cover h-full w-full rounded-xl"
+            className="object-cover h-full w-auto rounded-xl drop-shadow-xl "
           />
         </div>
-        <div className="aspect-w-9 aspect-h-16 ">
+        <div className="h-full flex items-center justify-center py-10 drop-shadow-xl">
           <img
             src={StreamerImages.Streamer1}
             alt="Streamer Circle 10"
-            className="object-cover h-full w-full rounded-xl"
+            className="object-cover h-full w-auto rounded-xl "
           />
         </div>
       </div>
@@ -24,4 +24,7 @@ const Body = () => {
   );
 };
 
-export default Body
+export default Body;
+
+//!todo
+//1. make the image turn into simple video of them doing live. it will be a video after 2/3 seconds
