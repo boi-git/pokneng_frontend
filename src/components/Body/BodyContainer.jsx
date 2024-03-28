@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import Content from "./Content";
+import MainContent from "./MainContent";
 
 const BodyContainer = () => {
   return (
     <div className="h-screen overflow-hidden ">
-      <Content></Content>
+      {/* <Content></Content> */}
+      <MainContent />
     </div>
   );
 };
