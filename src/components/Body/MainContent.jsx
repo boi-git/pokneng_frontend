@@ -1,5 +1,6 @@
 import React from "react";
 import * as StreamerImages from "../../source/image/streamerImage";
+import { FaXTwitter, FaTiktok, FaInstagram } from "react-icons/fa6";
 
 const MainContent = () => {
   return (
@@ -28,8 +29,8 @@ const MainContent = () => {
             </p>
           </div>
         </div>
-        <div className="w-full flex align-center">
-          <div className="font-playfair">
+        <div className="w-full flex flex-col align-center">
+          <div className="font-playfair flex flex-col justify-center align-center text-justify w-3/4">
             <h1 className="text-3xl text-center">
               Travel and Shopping with Pokneng
             </h1>
@@ -48,6 +49,16 @@ const MainContent = () => {
               </p>
             </div>
           </div>
+          <div className="w-full px-10">
+            <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
+            <div className="flex divide-x">
+              <FaInstagram size={20}></FaInstagram>
+              <FaTiktok size={20}></FaTiktok>
+              <FaXTwitter size={20}></FaXTwitter>
+            </div>
+
+            <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
+          </div>
         </div>
       </div>
     </div>
@@ -58,3 +69,4 @@ export default MainContent;
 
 //!todo
 //1. make the image turn into simple video of them doing live. it will be a video after 2/3 seconds
+//2. if user scroll all the way to bottom. and click next card this will scroll back to the top
