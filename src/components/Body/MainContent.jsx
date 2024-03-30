@@ -1,8 +1,21 @@
 import React from "react";
 import * as StreamerImages from "../../source/image/streamerImage";
 import { FaXTwitter, FaTiktok, FaInstagram } from "react-icons/fa6";
+import MediaQuery from "../utils/MediaQuery";
 
 const MainContent = () => {
+  const { isDesktopOrLaptop, isTablet, isMobile, isPortrait, isRetina } =
+    MediaQuery();
+
+  let responsive_class = "";
+
+  if (isDesktopOrLaptop && isTablet) {
+    responsive_class =
+      "h-full w-full flex items-center justify-center py-10 sm";
+  } else {
+    responsive_class =
+      "w-full flex flex-col tems-center justify-center py-10 sm";
+  }
   return (
     <div className="h-full w-screen flex flex-col items-center justify-start overflow-y-auto ">
       <div className="h-full flex items-center justify-center py-10 ">
@@ -12,7 +25,7 @@ const MainContent = () => {
           className="object-cover h-full w-auto rounded-xl drop-shadow-xl "
         />
       </div>
-      <div className="h-full flex items-center justify-center py-10 drop-shadow-xl">
+      <div className="h-full flex items-center justify-center py-10 ">
         <div className="font-playfair">
           <h1 className="text-4xl">Welcome to My Website</h1>
           <p className="text-lg">
@@ -20,15 +33,20 @@ const MainContent = () => {
           </p>
         </div>
       </div>
-      <div class="h-full w-full flex items-center justify-center py-10 drop-shadow-xl">
-        <div className="mr-4 w-full flex align-center">
-          <div className="font-playfair">
-            <h1 className="text-4xl">Welcome to My Website</h1>
-            <p className="text-lg">
-              This is some text written in Playfair Display font.
-            </p>
-          </div>
+
+      <div className={responsive_class}>
+        {/* <div className="w-full flex flex-col align-center">
+
+        </div> */}
+
+        <div className="w-full h-full flex align-center justify-center">
+          <img
+            src={StreamerImages.Streamer1}
+            alt="Streamer Circle 10"
+            className="h-full w-min  rounded-xl drop-shadow-xl "
+          />
         </div>
+
         <div className="w-full flex flex-col align-center">
           <div className="font-playfair flex flex-col justify-center align-center text-justify w-5/6">
             <h1 className="text-4xl text-center">
@@ -65,7 +83,6 @@ const MainContent = () => {
                 <p>Twitter</p>
               </div>
             </div>
-
             <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
           </div>
         </div>
