@@ -14,7 +14,7 @@ const MainContent = () => {
       </div>
       <div className="h-full flex items-center justify-center py-10 drop-shadow-xl">
         <div className="font-playfair">
-          <h1 className="text-3xl">Welcome to My Website</h1>
+          <h1 className="text-4xl">Welcome to My Website</h1>
           <p className="text-lg">
             This is some text written in Playfair Display font.
           </p>
@@ -23,15 +23,15 @@ const MainContent = () => {
       <div class="h-full w-full flex items-center justify-center py-10 drop-shadow-xl">
         <div className="mr-4 w-full flex align-center">
           <div className="font-playfair">
-            <h1 className="text-3xl">Welcome to My Website</h1>
+            <h1 className="text-4xl">Welcome to My Website</h1>
             <p className="text-lg">
               This is some text written in Playfair Display font.
             </p>
           </div>
         </div>
         <div className="w-full flex flex-col align-center">
-          <div className="font-playfair flex flex-col justify-center align-center text-justify w-3/4">
-            <h1 className="text-3xl text-center">
+          <div className="font-playfair flex flex-col justify-center align-center text-justify w-5/6">
+            <h1 className="text-4xl text-center">
               Travel and Shopping with Pokneng
             </h1>
             <div className="m-10">
@@ -51,10 +51,19 @@ const MainContent = () => {
           </div>
           <div className="w-full px-10">
             <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
-            <div className="flex divide-x">
-              <FaInstagram size={20}></FaInstagram>
-              <FaTiktok size={20}></FaTiktok>
-              <FaXTwitter size={20}></FaXTwitter>
+            <div className="flex  justify-evenly">
+              <div className="flex  items-center justify-center gap-5">
+                <FaInstagram size={26}></FaInstagram>
+                <p>Instagram</p>
+              </div>
+              <div className="flex  items-center justify-center gap-5">
+                <FaTiktok size={26}></FaTiktok>
+                <p>TikTok</p>
+              </div>
+              <div className="flex  items-center justify-center gap-5">
+                <FaXTwitter size={26}></FaXTwitter>
+                <p>Twitter</p>
+              </div>
             </div>
 
             <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
