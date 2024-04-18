@@ -47,7 +47,7 @@ const MainContent = () => {
           />
         </div>
 
-        <div className="w-full flex flex-col align-center">
+        <div className="w-full h-full flex flex-col items-center justify-center">
           <div className="font-playfair flex flex-col justify-center align-center text-justify w-5/6">
             <h1 className="text-4xl text-center">
               Travel and Shopping with Pokneng
@@ -62,7 +62,7 @@ const MainContent = () => {
               <p className="text-lg">
                 Say goodbye to ordinary trips and hello to a world where
                 business and pleasure collide in the most exhilarating way
-                possible. Join us and elevate your travel game to new heights –
+                possible. Join us and elevate your travel game to new heights -
                 let's embark on an adventure together!
               </p>
             </div>
