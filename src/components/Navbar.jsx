@@ -18,7 +18,7 @@ const Navbar = ({ onIndexChange }) => {
       <h1 className="w-full text-3xl font-bold text-[#181818] m-4">Pokneng.</h1>
       <ul className="hidden md:flex">
         <li className="p-4" onClick={() => handleMenuItemClick(0)}>Home</li>
-        <li className="p-4" >News</li>
+        <li className="p-4"  onClick={() => handleMenuItemClick(-1)}>News</li>
         <li className="p-4" onClick={() => handleMenuItemClick(streamer_data.length - 1)}>Team</li>
       </ul>
       <div onClick={handleNav} className="block md:hidden">
@@ -36,7 +36,7 @@ const Navbar = ({ onIndexChange }) => {
         </h1>
         <ul className="pt-8">
           <li className="p-4" onClick={() => handleMenuItemClick(0)}>Home</li>
-          <li className="p-4" >News</li>
+          <li className="p-4"  onClick={() => handleMenuItemClick(-1)}>News</li>
           <li className="p-4" onClick={() => handleMenuItemClick(streamer_data.length - 1)}>Team</li>
         </ul>
       </div>
