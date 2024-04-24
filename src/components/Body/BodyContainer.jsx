@@ -10,7 +10,7 @@ const BodyContainer = ({ selectedIndex }) => {
   } else if (selectedIndex === streamer_data.length - 1) {
     return <AboutUs />;
   } else {
-    return <Content />;
+    return <Content selectedIndex={selectedIndex} />;
   }
 };
 
