@@ -90,16 +90,6 @@ const MainContent = () => {
                   onClickHandler={() => handleCardClick(index)}
                 />
               ))}
-              {streamer_data.map((streamer_data, index) => (
-                <AboutUsCard
-                  key={index}
-                  name={streamer_data.name}
-                  image={streamer_data.image_profile.grid}
-                  socialmedia={streamer_data.instagram}
-                  isActive={index === activeCard}
-                  onClickHandler={() => handleCardClick(index)}
-                />
-              ))}
             </div>
           </div>
         </div>
