@@ -4,13 +4,14 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { streamer_data } from "../../source/dummy_data";
 import MediaQuery from "../utils/MediaQuery";
-import React, { useState } from "react";
+import React, { useState , useRef } from "react";
 
-const HorizontalCard = ({ onIndexChange }) => {
+const HorizontalCard = ({ selectedIndex,onIndexChange }) => {
   const { isDesktopOrLaptop, isTablet, isMobile, isPortrait, isRetina } =
     MediaQuery();
+  const sliderRef = useRef(null);
     
-  const [selectedIndex, setSelectedIndex] = useState(0);
+  const [selected_Index, setSelectedIndex] = useState(0);
 
   var settings = {
     dots: false,
@@ -32,10 +33,14 @@ const HorizontalCard = ({ onIndexChange }) => {
     onIndexChange(index); // Call the function passed from the parent component
   };
 
+  if(selected_Index !== selectedIndex ){
+    sliderRef.current.slickGoTo(selectedIndex);
+  }
+
   return (
     <div className="sticky bottom-0 left-0 w-full bg-transparent  flex align-center h-36 max-[124px] max-autp px-4 overflow-hidden">
       <div className="min-h-0 min-w-0 bg-transparent">
-        <Slider {...settings} afterChange={handleIndexChange}>
+        <Slider ref={sliderRef} {...settings} afterChange={handleIndexChange}>
           {streamer_data.map((streamer_data, index) => (
             <CarouselCard
               key={index}

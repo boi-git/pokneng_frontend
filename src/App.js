@@ -15,9 +15,9 @@ function App() {
 
   return (
     <div className="h-lvh w-screen flex flex-col relative overflow-hidden">
-      <Navbar />
+      <Navbar onIndexChange={handleIndexChange}/>
       <BodyContainer selectedIndex={selectedIndex} /> 
-      <CarouselCardContainer onIndexChange={handleIndexChange} />
+      <CarouselCardContainer selectedIndex={selectedIndex} onIndexChange={handleIndexChange} />
     </div>
   );
 }
