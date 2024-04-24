@@ -72,7 +72,7 @@ export const streamer_data = [
     url: "https://www.google.com",
   },
   {
-    name: "Michael Wilson",
+    name: "About Us",
     instagram: "@teamprofile",
     tiktok: "@teamprofile",
     twitter: "@teamprofile",

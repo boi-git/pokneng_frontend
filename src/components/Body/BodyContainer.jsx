@@ -2,16 +2,16 @@ import React, { useState } from "react";
 import Content from "./Content";
 import MainContent from "./MainContent";
 import AboutUs from "./About Us/AboutUs";
+import { streamer_data } from "../../source/dummy_data";
 
-
-const BodyContainer = () => {
-  return (
-    <div className="h-screen overflow-hidden ">
-      {/* <Content></Content> */}
-      {/* <MainContent /> */}
-      <AboutUs/>
-    </div>
-  );
+const BodyContainer = ({ selectedIndex }) => {
+  if (selectedIndex === 0) {
+    return <MainContent />;
+  } else if (selectedIndex === streamer_data.length - 1) {
+    return <AboutUs />;
+  } else {
+    return <Content />;
+  }
 };
 
 export default BodyContainer;
