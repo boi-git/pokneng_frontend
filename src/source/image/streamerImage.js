@@ -31,3 +31,5 @@ export const StreamerSquare7 = require("./streamer square 7.png");
 export const StreamerSquare8 = require("./streamer square 8.png");
 export const StreamerSquare9 = require("./streamer square 9.png");
 export const StreamerSquare10 = require("./streamer square 10.png");
+
+export const BgNews = require("./bg_news.png")
