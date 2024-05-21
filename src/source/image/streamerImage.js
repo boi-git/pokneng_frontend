@@ -9,7 +9,6 @@ export const StreamerCircle8 = require("./streamer circle 8.png");
 export const StreamerCircle9 = require("./streamer circle 9.png");
 export const StreamerCircle10 = require("./streamer circle 10.png");
 
-
 export const Streamer1 = require("./streamer 1.png");
 export const Streamer2 = require("./streamer 2.png");
 export const Streamer3 = require("./streamer 3.png");
@@ -32,4 +31,10 @@ export const StreamerSquare8 = require("./streamer square 8.png");
 export const StreamerSquare9 = require("./streamer square 9.png");
 export const StreamerSquare10 = require("./streamer square 10.png");
 
-export const BgNews = require("./bg_news.png")
+export const BgNews = require("./bg_news.png");
+
+export const Travel = require("./travel.png");
+export const Sales = require("./sales.png");
+export const Group = require("./group.png");
+
+export const Maps = require("./map.jpg");
