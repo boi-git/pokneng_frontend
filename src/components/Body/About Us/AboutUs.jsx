@@ -41,7 +41,7 @@ const MainContent = () => {
           <img
             src={StreamerImages.Streamer1}
             alt="Streamer Circle 10"
-            className="h-full w-min  rounded-xl drop-shadow-xl "
+            className="object-cover h-full w-min  rounded-xl drop-shadow-xl "
           />
         </div>
 
