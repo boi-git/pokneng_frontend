@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.travel-cards-container {
+  overflow-y: auto;
+  padding-bottom: 30px;
+  max-height: calc(
+    3 * (180px + 16px)
+  ); /* Replace CARD_HEIGHT with the actual height of your card */
+}
+
+.travel-cards-container > :nth-of-type(3) {
+  margin-bottom: auto; /* Ensures the third card is at the bottom of the max-height */
+}
